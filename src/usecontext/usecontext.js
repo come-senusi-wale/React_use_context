@@ -2,7 +2,10 @@
 
  import { data } from "./data ";
 
- let personContext = React.createContext();
+ import { Loop } from "./loop";
+ 
+
+ export let personContext = React.createContext();
 
  // two context are provider and consumer ::::::::::::
 
@@ -24,7 +27,7 @@ const Usecontext = () => {
   )
 }
 
-let Loop = () => {
+/*let Loop = () => {
 
     let {people} = useContext(personContext);
 
@@ -34,10 +37,10 @@ let Loop = () => {
         })
     )
     
-}
+}*/
 
 
-let Single = ({name, id}) => {
+/*let Single = ({name, id}) => {
 
     let {removehandler} = useContext(personContext);
     
@@ -55,6 +58,6 @@ let Single = ({name, id}) => {
         </>
     )
 
-}
+}*/
 
 export default Usecontext
